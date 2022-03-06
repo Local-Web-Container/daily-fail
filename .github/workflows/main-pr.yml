@@ -47,13 +47,11 @@ jobs:
           retention-days: 2
 
 
-      - name: add artifact links to pull request and related issues step
-        uses: warting/artifact-links@v0.0.1
+      - uses: actions/download-artifact@v3
         if: failure()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          prefix: Here are the artifacts
-          suffix: Have a nice day.
-          format: name
-          addTo: pullandissues
+          name: Reports
+
+      - name: Display structure of downloaded files
+        if: failure()
+        run: ls -R
