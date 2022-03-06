@@ -49,6 +49,7 @@ jobs:
 
       - name: add artifact links to pull request and related issues step
         uses: warting/artifact-links@v0.0.1
+        if: failure()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
