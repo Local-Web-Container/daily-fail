@@ -27,6 +27,10 @@ jobs:
           path: '**/build/reports/*'
           retention-days: 2
 
+
+      - name: Run Android checks
+        run: rm -Rf app/*
+
       - uses: warting/download-artifact@v3
         with:
           name: Reports
