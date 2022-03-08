@@ -1,0 +1,88 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.failingchecks"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:5:5-23:19
+12        android:allowBackup="true"
+12-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] /home/stefan/.gradle/caches/transforms-3/40b09bd692ceb55ac644a23f7abc728b/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+14        android:icon="@mipmap/ic_launcher"
+14-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:7:9-43
+15        android:label="@string/app_name"
+15-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:8:9-41
+16        android:roundIcon="@mipmap/ic_launcher_round"
+16-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:9:9-54
+17        android:supportsRtl="true"
+17-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:10:9-35
+18        android:theme="@style/Theme.FailingChecks" >
+18-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:11:9-51
+19        <activity
+19-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:12:9-22:20
+20            android:name="com.example.failingchecks.MainActivity"
+20-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:13:13-41
+21            android:exported="true"
+21-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:14:13-36
+22            android:label="@string/app_name"
+22-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:15:13-45
+23            android:theme="@style/Theme.FailingChecks" >
+23-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:16:13-55
+24            <intent-filter>
+24-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:17:13-21:29
+25                <action android:name="android.intent.action.MAIN" />
+25-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:18:17-69
+25-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:18:25-66
+26
+27                <category android:name="android.intent.category.LAUNCHER" />
+27-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:20:17-77
+27-->/home/stefan/git/daily-fail/app/src/main/AndroidManifest.xml:20:27-74
+28            </intent-filter>
+29        </activity>
+30
+31        <provider
+31-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:26:9-34:20
+32            android:name="androidx.startup.InitializationProvider"
+32-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:27:13-67
+33            android:authorities="com.example.failingchecks.androidx-startup"
+33-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:28:13-68
+34            android:exported="false" >
+34-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:29:13-37
+35            <meta-data
+35-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:31:13-33:52
+36                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+36-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:32:17-85
+37                android:value="androidx.startup" />
+37-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:33:17-49
+38        </provider>
+39
+40        <receiver
+40-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:36:9-45:20
+41            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+41-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:37:13-76
+42            android:directBootAware="false"
+42-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:38:13-44
+43            android:enabled="true"
+43-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:39:13-35
+44            android:exported="true"
+44-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:40:13-36
+45            android:permission="android.permission.DUMP" >
+45-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:41:13-57
+46            <intent-filter>
+46-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:42:13-44:29
+47                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+47-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:43:17-91
+47-->[androidx.profileinstaller:profileinstaller:1.0.1] /home/stefan/.gradle/caches/transforms-3/a6ebc344a36352be44e1c000eb3c4427/transformed/profileinstaller-1.0.1/AndroidManifest.xml:43:25-88
+48            </intent-filter>
+49        </receiver>
+50    </application>
+51
+52</manifest>
