@@ -34,13 +34,5 @@ jobs:
 
       - name: Artifacts
         run: |
-          URL="https://api.github.com/repos/${{ github.repository }}/actions/artifacts"
-          curl -u admin:${{ secrets.GITHUB_TOKEN }} $URL |jq '.artifacts[].id'
-
-# https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$artifactsid/zip
-      - uses: warting/download-artifact@v3
-        with:
-          name: Reports
-
-      - name: Display structure of downloaded files
-        run: ls -R
+          URL="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          echo $URL
