@@ -31,6 +31,12 @@ jobs:
       - name: Run Android checks
         run: rm -Rf app/*
 
+
+      - name: Artifacts
+        run: |
+          URL="https://api.github.com/repos/weide-zhou/ticket13/actions/artifacts"
+          curl -u admin:${{ secrets.GITHUB_TOKEN }} $URL |jq '.artifacts[].id'
+
       - uses: warting/download-artifact@v3
         with:
           name: Reports
