@@ -36,4 +36,4 @@ jobs:
         uses: peter-evans/commit-comment@v1
         with:
           body: |
-            https://localwebcontainer.com/app/build/reports/lint-results-debug.html?installfrom=https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            https://http://githubartifactdownloader.localwebcontainer.com/?repo=${{ github.repository }}&run=${{ github.run_id }}&artifact=Reports&path=/app/build/reports/lint-results-debug.html
