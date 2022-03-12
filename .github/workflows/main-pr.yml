@@ -36,4 +36,4 @@ jobs:
         uses: peter-evans/commit-comment@v1
         with:
           body: |
-            https://githubartifactdownloader.localwebcontainer.com/?repo=${{ github.repository }}&run=${{ github.run_id }}&artifact=Reports&path=/app/build/reports/lint-results-debug.html
+            [show reports in  localwebcontainer.com](https://githubartifactdownloader.localwebcontainer.com/?repo=${{ github.repository }}&run=${{ github.run_id }}&artifact=Reports&path=/app/build/reports/lint-results-debug.html)
