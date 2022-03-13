@@ -28,12 +28,12 @@ jobs:
           retention-days: 2
 
 
-      - name: Run Android checks
-        run: rm -Rf app/*
+      #- name: Run Android checks
+      #  run: rm -Rf app/*
 
 
-      - name: Create commit comment
-        uses: peter-evans/commit-comment@v1
-        with:
-          body: |
-            [show reports in  localwebcontainer.com](https://githubartifactdownloader.localwebcontainer.com/?repo=${{ github.repository }}&run=${{ github.run_id }}&artifact=Reports&path=/app/build/reports/lint-results-debug.html)
+      #- name: Create commit comment
+      #  uses: peter-evans/commit-comment@v1
+      #  with:
+      #    body: |
+      #      [show reports in  localwebcontainer.com](https://githubartifactdownloader.localwebcontainer.com/?repo=${{ github.repository }}&run=${{ github.run_id }}&artifact=Reports&path=/app/build/reports/lint-results-debug.html)
